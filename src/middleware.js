@@ -54,6 +54,9 @@ export async function middleware(req) {
       return res;
     }
     const text = await upstream.text();
+    // Rough token estimate (~4 chars per token for English+code mix).
+    // Saves agents from re-tokenizing to budget context window usage.
+    const approxTokens = Math.ceil(text.length / 4);
     return new NextResponse(text, {
       status: 200,
       headers: {
@@ -61,6 +64,7 @@ export async function middleware(req) {
         'Vary': 'Accept',
         'Cache-Control': 'public, max-age=300, must-revalidate',
         'X-Markdown-Source': target,
+        'X-Markdown-Tokens': String(approxTokens),
       },
     });
   } catch {

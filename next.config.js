@@ -39,6 +39,10 @@ const nextConfig = {
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
           { key: 'Link', value: agentDiscoveryLink },
+          // Vary on Accept so Vercel's edge cache stores text/html and
+          // text/markdown variants separately. Without this, the first
+          // browser request locks in the HTML response for everyone.
+          { key: 'Vary', value: 'Accept' },
         ],
       },
       // Force correct Content-Type on the JSON well-known files.
