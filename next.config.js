@@ -17,18 +17,13 @@ const nextConfig = {
   // ════════════════════════════════════════════════════════════
   // REWRITES — Markdown for Agents at the edge (before cache)
   // ════════════════════════════════════════════════════════════
-  // Static-prerendered pages (the homepage and its locale variants)
-  // are served by Vercel from the CDN edge BEFORE middleware runs,
-  // so middleware-based content negotiation fails for those routes.
-  // beforeFiles rewrites with a header `has` condition fire at the
-  // edge layer earlier, so they DO bypass static serving.
-  // Source: https://nextjs.org/docs/app/api-reference/next-config-js/rewrites
+  // Vercel processes both rewrites and redirects BEFORE serving the
+  // CDN-cached prerendered HTML. We use rewrites where possible and
+  // redirects as a fallback so agents that follow 308s end up at the
+  // markdown endpoint regardless.
   async rewrites() {
     return {
       beforeFiles: [
-        // When an agent requests / (or its locale variants) with
-        // Accept: text/markdown, serve /api/markdown which returns
-        // llms.txt with the proper Content-Type: text/markdown.
         {
           source: '/',
           has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
@@ -46,6 +41,32 @@ const nextConfig = {
         },
       ],
     };
+  },
+
+  // Belt-and-suspenders: same logic as redirects (308). Agents that
+  // follow redirects end up at the markdown endpoint. Helps when
+  // Vercel's edge cache layer skips the rewrite for prerendered routes.
+  async redirects() {
+    return [
+      {
+        source: '/',
+        has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
+        destination: '/api/markdown/',
+        permanent: false,
+      },
+      {
+        source: '/:locale(en|fr|ar)',
+        has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
+        destination: '/api/markdown/',
+        permanent: false,
+      },
+      {
+        source: '/:locale(en|fr|ar)/',
+        has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
+        destination: '/api/markdown/',
+        permanent: false,
+      },
+    ];
   },
 
   // ════════════════════════════════════════════════════════════
