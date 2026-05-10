@@ -76,9 +76,12 @@ export async function middleware(req) {
 }
 
 // Match all paths except API routes, Next.js internals, static assets,
-// and the markdown source itself (to avoid recursion).
+// and the markdown source itself (to avoid recursion). Two explicit
+// matchers because the negative-lookahead glob doesn't always catch
+// the apex `/` reliably.
 export const config = {
   matcher: [
-    '/((?!api/|_next/|_vercel/|llms\\.txt|llms-full\\.txt|\\.well-known/|favicon|robots\\.txt|sitemap\\.xml|.*\\.(?:png|jpg|jpeg|svg|webp|ico|woff2?|ttf|eot|css|js|map|xml)).*)',
+    '/',
+    '/((?!api|_next|_vercel|llms\\.txt|llms-full\\.txt|\\.well-known|favicon|robots\\.txt|sitemap\\.xml|.*\\.(?:png|jpg|jpeg|svg|webp|ico|woff2?|ttf|eot|css|js|map|xml)).*)',
   ],
 };
