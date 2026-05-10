@@ -15,6 +15,40 @@ const nextConfig = {
   },
 
   // ════════════════════════════════════════════════════════════
+  // REWRITES — Markdown for Agents at the edge (before cache)
+  // ════════════════════════════════════════════════════════════
+  // Static-prerendered pages (the homepage and its locale variants)
+  // are served by Vercel from the CDN edge BEFORE middleware runs,
+  // so middleware-based content negotiation fails for those routes.
+  // beforeFiles rewrites with a header `has` condition fire at the
+  // edge layer earlier, so they DO bypass static serving.
+  // Source: https://nextjs.org/docs/app/api-reference/next-config-js/rewrites
+  async rewrites() {
+    return {
+      beforeFiles: [
+        // When an agent requests / (or its locale variants) with
+        // Accept: text/markdown, serve /api/markdown which returns
+        // llms.txt with the proper Content-Type: text/markdown.
+        {
+          source: '/',
+          has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
+          destination: '/api/markdown',
+        },
+        {
+          source: '/:locale(en|fr|ar)',
+          has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
+          destination: '/api/markdown',
+        },
+        {
+          source: '/:locale(en|fr|ar)/',
+          has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
+          destination: '/api/markdown',
+        },
+      ],
+    };
+  },
+
+  // ════════════════════════════════════════════════════════════
   // HTTP HEADERS — security + agent discovery
   // ════════════════════════════════════════════════════════════
   async headers() {
