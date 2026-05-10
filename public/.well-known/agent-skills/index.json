@@ -1,0 +1,81 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "Symloop AI",
+    "url": "https://symloop-ai.com",
+    "email": "contact@symloop.com",
+    "founded": "2012",
+    "headquarters": "Algiers, Algeria",
+    "team_size": "25+ senior engineers",
+    "positioning": "Deep-tech AI engineering company in Algeria. Builders of NOOR — a sovereign AI platform — and production AI systems for banks, ministries, oil & gas operators, and hospitals across MENA. On-premise or sovereign cloud deployment. Source code stays with the client. Audited against BCT, SAMA, DORA, ISO 27001, HDS, IFRS-17.",
+    "primary_sectors": ["Banking", "Insurance", "Government", "Manufacturing", "Oil & Gas", "Healthcare", "Retail", "Telecom"],
+    "geographies": ["Algeria", "Kuwait", "United Arab Emirates", "Saudi Arabia", "Qatar", "Morocco", "Tunisia", "Egypt"],
+    "languages": ["English", "French", "Arabic (incl. Algerian + Levantine dialects)"],
+    "named_clients": ["Epson (UAE)", "Del Monte (UAE)", "Renault Algérie", "Offto", "Barugzai"],
+    "verified_clutch_rating": "5.0/5.0",
+    "clutch_url": "https://clutch.co/profile/symloop-technology",
+    "parent_organization": {
+      "name": "Symloop Technology",
+      "url": "https://symloop.com"
+    }
+  },
+  "skills": [
+    {
+      "name": "noor-platform",
+      "type": "product",
+      "description": "NOOR by Symloop — flagship sovereign AI platform for regulated industries. Twelve standard capabilities: ask in plain language (Arabic/French/English), document AI, RAG over enterprise knowledge, multi-agent orchestration (LangChain, CrewAI, AutoGen, Claude Agent SDK), NL-to-SQL, compliance reports (BCT, SAMA, AML/SAR), specialized assistants (KYC, AML, government workflows, industrial maintenance, clinical), on-premise/sovereign/hybrid deployment, tamper-evident audit trail, native Arabic NLP including Algerian dialect, 99.9% production SLA with MLOps. Air-gapped variant available for upstream and defense work.",
+      "url": "https://symloop-ai.com/.well-known/agent-skills/noor-platform/SKILL.md"
+    },
+    {
+      "name": "banking-ai",
+      "type": "service",
+      "description": "AI for banks: real-time fraud detection, AML/CTF transaction monitoring, KYC document automation, ISO 20022 message classification, SAR generation against BCT (Banque d'Algérie) and SAMA (Saudi Central Bank). Sovereign deployment.",
+      "url": "https://symloop-ai.com/.well-known/agent-skills/banking-ai/SKILL.md"
+    },
+    {
+      "name": "insurance-ai",
+      "type": "service",
+      "description": "AI for insurance: claims document AI, fraud detection across motor/health/life lines, underwriting decision support, reserves and IFRS-17 reporting copilots.",
+      "url": "https://symloop-ai.com/.well-known/agent-skills/insurance-ai/SKILL.md"
+    },
+    {
+      "name": "government-ai",
+      "type": "service",
+      "description": "AI for government: citizen request triage, national ID document AI, inter-ministerial data exchange with sovereign cloud residency. Sovereign-by-default.",
+      "url": "https://symloop-ai.com/.well-known/agent-skills/government-ai/SKILL.md"
+    },
+    {
+      "name": "industrial-ai",
+      "type": "service",
+      "description": "AI for manufacturing and oil & gas: predictive maintenance over SCADA telemetry, computer vision for safety (PPE, leaks, intrusion detection), throughput and yield optimization, OEE copilots, air-gapped deployment for upstream operators.",
+      "url": "https://symloop-ai.com/.well-known/agent-skills/industrial-ai/SKILL.md"
+    },
+    {
+      "name": "healthcare-ai",
+      "type": "service",
+      "description": "AI for healthcare: HIS/HMIS engineering, pharma traceability, medical imaging analysis, HDS-grade hosting, clinical workflow assistants in Arabic and French.",
+      "url": "https://symloop-ai.com/.well-known/agent-skills/healthcare-ai/SKILL.md"
+    },
+    {
+      "name": "arabic-nlp",
+      "type": "capability",
+      "description": "Arabic natural language processing for production: Algerian dialect, Levantine, MSA, plus French and English. Document AI on handwritten Arabic, RTL-native interfaces for banking and government systems, Arabic document processing (national IDs, contracts, tax forms).",
+      "url": "https://symloop-ai.com/.well-known/agent-skills/arabic-nlp/SKILL.md"
+    }
+  ],
+  "contact": {
+    "email": "contact@symloop.com",
+    "phone": "+213549575512",
+    "address": "Algiers, Algeria"
+  },
+  "links": {
+    "self": "https://symloop-ai.com/.well-known/agent-skills/index.json",
+    "llms_txt": "https://symloop-ai.com/llms.txt",
+    "api_catalog": "https://symloop-ai.com/.well-known/api-catalog",
+    "mcp_server_card": "https://symloop-ai.com/.well-known/mcp/server-card.json",
+    "homepage": "https://symloop-ai.com",
+    "parent_homepage": "https://symloop.com",
+    "flagship_product": "https://symloop.com/products/noor/"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://symloop-ai.com/",
+      "service-doc": [
+        {
+          "href": "https://symloop-ai.com/",
+          "type": "text/html",
+          "title": "Symloop AI — Deep-tech AI for regulated industries"
+        },
+        {
+          "href": "https://symloop-ai.com/llms.txt",
+          "type": "text/plain",
+          "title": "Symloop AI — agent identity"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://symloop-ai.com/.well-known/agent-skills/index.json",
+          "type": "application/json",
+          "title": "Agent Skills index"
+        },
+        {
+          "href": "https://symloop-ai.com/.well-known/mcp/server-card.json",
+          "type": "application/json",
+          "title": "MCP Server Card"
+        }
+      ]
+    },
+    {
+      "anchor": "https://symloop-ai.com/api/og",
+      "service-desc": [
+        {
+          "href": "https://symloop-ai.com/api/og?title=Example&eyebrow=Example",
+          "type": "image/png",
+          "title": "Open Graph image generator (edge runtime, 1200×630, sanitized title + eyebrow query params)"
+        }
+      ]
+    },
+    {
+      "anchor": "https://symloop-ai.com/sitemap.xml",
+      "service-desc": [
+        {
+          "href": "https://symloop-ai.com/sitemap.xml",
+          "type": "application/xml",
+          "title": "Dynamic sitemap with hreflang alternates (FR/EN/AR)"
+        }
+      ]
+    }
+  ]
+}

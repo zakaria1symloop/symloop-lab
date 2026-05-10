@@ -1,10 +1,16 @@
 import '../styles/globals.css';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 import { IBM_Plex_Sans_Arabic, JetBrains_Mono, Instrument_Serif } from 'next/font/google';
+
+// WebMCP — exposes Symloop AI capabilities as agent-callable tools when
+// the browser supports navigator.modelContext. No-op otherwise. Loaded
+// client-only because navigator.modelContext is a browser API.
+const WebMCP = dynamic(() => import('../components/WebMCP'), { ssr: false });
 
 // Self-hosted Google Fonts via next/font — same exact font set as the parent
 // symloop.com site so the visual DNA is identical. Variable name is matched
@@ -99,6 +105,9 @@ export default function App({ Component, pageProps }) {
       <div className={`${fontVars} bg-black text-white min-h-screen`}>
         <Component {...pageProps} />
       </div>
+
+      {/* WebMCP — registers agent-callable tools via navigator.modelContext */}
+      <WebMCP />
 
       <SpeedInsights />
       <Analytics />

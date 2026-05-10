@@ -1,0 +1,92 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schema/server-card/v1.json",
+  "serverInfo": {
+    "name": "symloop-ai",
+    "version": "0.1.0",
+    "title": "Symloop AI — Deep-Tech AI Discovery",
+    "description": "Read-only MCP server exposing Symloop AI's capabilities and engagement model. Symloop AI is a deep-tech AI engineering company in Algiers, Algeria — builders of NOOR (sovereign AI platform) and production AI systems for banks, ministries, oil & gas operators, and hospitals across MENA. The AI engineering arm of Symloop Technology (founded 2012, 25+ senior engineers).",
+    "publisher": {
+      "name": "Symloop AI",
+      "url": "https://symloop-ai.com",
+      "email": "contact@symloop.com"
+    }
+  },
+  "transport": {
+    "type": "https",
+    "endpoint": "https://symloop-ai.com/api/mcp",
+    "status": "planned",
+    "available_from": "2026-Q4"
+  },
+  "capabilities": {
+    "tools": {
+      "list": [
+        {
+          "name": "get_noor_overview",
+          "description": "Returns the NOOR sovereign AI platform overview — positioning, the 12 capabilities, deployment options (on-premise, sovereign cloud, hybrid, air-gapped), target sectors. Use when a buyer asks about Symloop's AI platform."
+        },
+        {
+          "name": "get_noor_capabilities",
+          "description": "Returns detailed descriptions of NOOR's 12 standard capabilities: plain-language interface, document AI, RAG, multi-agent systems, NL-to-SQL, compliance reports, knowledge libraries, specialized assistants, on-premise/sovereign deployment, audit trail, Arabic NLP, production SLA."
+        },
+        {
+          "name": "get_sector_use_cases",
+          "description": "Returns NOOR's pre-built use cases per sector. Inputs: sector slug. Supported: banking, insurance, government, manufacturing, oil-gas, healthcare, retail, telecom."
+        },
+        {
+          "name": "get_compliance_frameworks",
+          "description": "Returns the regulatory frameworks Symloop AI delivers compliance against: BCT, SAMA, DORA, ISO 27001, HDS, GDPR, IFRS-17."
+        },
+        {
+          "name": "get_engagement_model",
+          "description": "Returns Symloop AI's engagement model: 2-week paid discovery sprint (~$12K USD) → 6–18 month production engagement ($60K to $1M+) → 99.9% SLA managed operations or full handover with 90-day stabilization warranty."
+        },
+        {
+          "name": "request_noor_demo",
+          "description": "Schedules a 60-minute NOOR demo tailored to the buyer's sector and data. Inputs: sector, target deployment (on-prem/sovereign/hybrid/air-gapped), regulatory framework, contact details."
+        },
+        {
+          "name": "request_quote",
+          "description": "Submits a qualified engagement inquiry. Inputs: scope, timeline, budget range, sector, geography, contact details."
+        },
+        {
+          "name": "get_named_clients",
+          "description": "Returns the list of named clients Symloop AI has shipped production work for: Epson (UAE), Del Monte (UAE), Renault Algérie, Offto, Barugzai."
+        }
+      ]
+    },
+    "resources": {
+      "list": [
+        {
+          "uri": "symloop-ai://noor",
+          "name": "NOOR — Sovereign AI Platform",
+          "description": "Flagship product. Sovereign AI engineered for MENA's regulated industries. On-premise / sovereign cloud / hybrid / air-gapped deployment. Audited for BCT, SAMA, DORA, ISO 27001, HDS, IFRS-17."
+        },
+        {
+          "uri": "symloop-ai://about",
+          "name": "About Symloop AI",
+          "description": "Deep-tech AI engineering arm of Symloop Technology. Algiers HQ since 2012. 25+ senior engineers, no subcontracting. Source code, model weights, and runbooks belong to the client at engagement end."
+        },
+        {
+          "uri": "symloop-ai://compliance",
+          "name": "Compliance Frameworks",
+          "description": "Compliance documentation against BCT (Banque d'Algérie), SAMA (Saudi Central Bank), DORA (EU resilience), ISO 27001, HDS (French health data), GDPR, IFRS-17."
+        }
+      ]
+    },
+    "prompts": {
+      "list": []
+    }
+  },
+  "links": {
+    "self": "https://symloop-ai.com/.well-known/mcp/server-card.json",
+    "agent_skills": "https://symloop-ai.com/.well-known/agent-skills/index.json",
+    "api_catalog": "https://symloop-ai.com/.well-known/api-catalog",
+    "llms_txt": "https://symloop-ai.com/llms.txt",
+    "homepage": "https://symloop-ai.com",
+    "parent": "https://symloop.com"
+  },
+  "contact": {
+    "email": "contact@symloop.com",
+    "phone": "+213549575512"
+  }
+}
