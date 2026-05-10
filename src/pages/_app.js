@@ -30,7 +30,7 @@ const fontSerif = Instrument_Serif({
   display: 'swap',
 });
 
-const SITE_URL = 'https://symloop-lab.com';
+const SITE_URL = 'https://symloop-ai.com';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();

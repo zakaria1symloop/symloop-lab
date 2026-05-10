@@ -1,5 +1,5 @@
 // ============================================================================
-// SYMLOOP LAB — Homepage (technical / AI-aesthetic, no gradients, B2B-direct)
+// SYMLOOP AI — Homepage (technical / AI-aesthetic, no gradients, B2B-direct)
 //
 // Visual language:
 //   - Pure black background, white text, ONE accent (cyan #ffffff)
@@ -104,8 +104,8 @@ const FRAMEWORKS = ['BCT', 'SAMA', 'DORA', 'ISO 27001', 'HDS', 'GDPR'];
 
 const COPY = {
   en: {
-    metaTitle: 'Symloop Lab — Deep-Tech AI · Sovereign AI for Banking, Insurance, Manufacturing, Government, Oil & Gas, Healthcare, Retail, Telecom · Algeria · Kuwait · UAE',
-    metaDesc:  "Symloop Lab is the deep-tech AI engineering arm of Symloop Technology. Production AI across eight sectors — banking, insurance, government, manufacturing, oil & gas, healthcare, retail, telecom. NOOR — our sovereign AI platform — on-premise by default, audited against BCT, SAMA, DORA, ISO 27001, HDS, IFRS-17. Trusted worldwide by Epson (UAE), Del Monte (UAE), Renault Algérie, Offto and Barugzai. Algiers HQ since 2012, 25+ senior engineers.",
+    metaTitle: 'Symloop AI — Deep-Tech AI · Sovereign AI for Banking, Insurance, Manufacturing, Government, Oil & Gas, Healthcare, Retail, Telecom · Algeria · Kuwait · UAE',
+    metaDesc:  "Symloop AI is the deep-tech AI engineering arm of Symloop Technology. Production AI across eight sectors — banking, insurance, government, manufacturing, oil & gas, healthcare, retail, telecom. NOOR — our sovereign AI platform — on-premise by default, audited against BCT, SAMA, DORA, ISO 27001, HDS, IFRS-17. Trusted worldwide by Epson (UAE), Del Monte (UAE), Renault Algérie, Offto and Barugzai. Algiers HQ since 2012, 25+ senior engineers.",
     metaKeywords: 'deep tech AI Algeria, sovereign AI MENA, AI engineering company Algiers, AI for banks MENA, AI for insurance, AI for manufacturing, AI for production factories, AI for government MENA, AI for oil and gas Algeria, AI for healthcare, AI for retail, AI for telecom, NOOR sovereign AI, on-premise AI deployment, Arabic NLP, multi-agent AI systems, BCT compliance AI, SAMA compliance AI, DORA, ISO 27001, IFRS-17 AI, AI engineering Kuwait, AI engineering UAE, AI Epson UAE, AI Del Monte UAE',
     hero: {
       titleA:    'AI that compounds',
@@ -133,8 +133,8 @@ const COPY = {
     },
   },
   fr: {
-    metaTitle: "Symloop Lab — Deep-Tech IA · IA Souveraine pour Banque, Assurance, Industrie, Gouvernement, Oil & Gas, Santé, Retail, Télécom · Alger · Koweït · UAE",
-    metaDesc:  "Symloop Lab est le bras d'ingénierie IA deep-tech de Symloop Technology. IA de production sur huit secteurs — banque, assurance, gouvernement, industrie, oil & gas, santé, retail, télécom. NOOR — notre plateforme d'IA souveraine — on-premise par défaut, auditée BCT, SAMA, DORA, ISO 27001, HDS, IFRS-17. Référencée par Epson (UAE), Del Monte (UAE), Renault Algérie, Offto et Barugzai. Siège Alger depuis 2012, 25+ ingénieurs seniors.",
+    metaTitle: "Symloop AI — Deep-Tech IA · IA Souveraine pour Banque, Assurance, Industrie, Gouvernement, Oil & Gas, Santé, Retail, Télécom · Alger · Koweït · UAE",
+    metaDesc:  "Symloop AI est le bras d'ingénierie IA deep-tech de Symloop Technology. IA de production sur huit secteurs — banque, assurance, gouvernement, industrie, oil & gas, santé, retail, télécom. NOOR — notre plateforme d'IA souveraine — on-premise par défaut, auditée BCT, SAMA, DORA, ISO 27001, HDS, IFRS-17. Référencée par Epson (UAE), Del Monte (UAE), Renault Algérie, Offto et Barugzai. Siège Alger depuis 2012, 25+ ingénieurs seniors.",
     metaKeywords: "deep tech IA Algérie, IA souveraine MENA, société IA Alger, IA banques MENA, IA assurance, IA industrie, IA usines de production, IA gouvernement, IA oil and gas Algérie, IA santé, IA retail, IA télécom, NOOR IA souveraine, déploiement IA on-premise, NLP arabe, systèmes IA multi-agents, conformité BCT, conformité SAMA, DORA, ISO 27001, IFRS-17 IA, ingénierie IA Koweït, ingénierie IA UAE, IA Epson UAE, IA Del Monte UAE",
     hero: {
       titleA:    "Une IA qui compose",
@@ -162,8 +162,8 @@ const COPY = {
     },
   },
   ar: {
-    metaTitle: 'مختبر سيملوب — Deep-Tech للذكاء الاصطناعي · ذكاء اصطناعي سيادي للمصارف، التأمين، الصناعة، الحكومة، النفط والغاز، الصحة، التجزئة، الاتصالات · الجزائر · الكويت · الإمارات',
-    metaDesc:  'مختبر سيملوب هو الذراع الهندسي للذكاء الاصطناعي العميق لشركة سيملوب تكنولوجي. ذكاء اصطناعي إنتاجي عبر ثمانية قطاعات — المصارف، التأمين، الحكومة، الصناعة، النفط والغاز، الصحة، التجزئة، الاتصالات. NOOR — منصتنا للذكاء الاصطناعي السيادي — on-premise افتراضياً، مدقق وفقاً لـ BCT و SAMA و DORA و ISO 27001 و HDS و IFRS-17. عملاء حول العالم: Epson (الإمارات)، Del Monte (الإمارات)، Renault Algérie، Offto، Barugzai. مقرنا الجزائر العاصمة منذ 2012، أكثر من 25 مهندساً.',
+    metaTitle: 'سيملوب AI — Deep-Tech للذكاء الاصطناعي · ذكاء اصطناعي سيادي للمصارف، التأمين، الصناعة، الحكومة، النفط والغاز، الصحة، التجزئة، الاتصالات · الجزائر · الكويت · الإمارات',
+    metaDesc:  'سيملوب AI هو الذراع الهندسي للذكاء الاصطناعي العميق لشركة سيملوب تكنولوجي. ذكاء اصطناعي إنتاجي عبر ثمانية قطاعات — المصارف، التأمين، الحكومة، الصناعة، النفط والغاز، الصحة، التجزئة، الاتصالات. NOOR — منصتنا للذكاء الاصطناعي السيادي — on-premise افتراضياً، مدقق وفقاً لـ BCT و SAMA و DORA و ISO 27001 و HDS و IFRS-17. عملاء حول العالم: Epson (الإمارات)، Del Monte (الإمارات)، Renault Algérie، Offto، Barugzai. مقرنا الجزائر العاصمة منذ 2012، أكثر من 25 مهندساً.',
     metaKeywords: 'deep tech ذكاء اصطناعي الجزائر, ذكاء اصطناعي سيادي MENA, شركة ذكاء اصطناعي الجزائر العاصمة, NOOR ذكاء اصطناعي سيادي, ذكاء اصطناعي on-premise, NLP عربي, ذكاء اصطناعي للتأمين, ذكاء اصطناعي للصناعة, ذكاء اصطناعي للتجزئة, ذكاء اصطناعي للاتصالات, ذكاء اصطناعي الكويت, ذكاء اصطناعي الإمارات, Epson الإمارات, Del Monte الإمارات',
     hero: {
       titleA:    'ذكاء اصطناعي يضاعف',
@@ -528,11 +528,11 @@ export default function HomePage() {
   const c = COPY[locale] || COPY.en;
   const arrow = isRtl ? <ArrowLeft className="w-3.5 h-3.5" strokeWidth={1.5} /> : <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} />;
 
-  const webPageLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: c.metaTitle, description: c.metaDesc, url: 'https://symloop-lab.com/', inLanguage: locale };
+  const webPageLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: c.metaTitle, description: c.metaDesc, url: 'https://symloop-ai.com/', inLanguage: locale };
   const serviceLd = {
     '@context': 'https://schema.org', '@type': 'Service',
     serviceType: 'Deep-tech AI engineering for regulated industries',
-    provider: { '@type': 'Organization', '@id': 'https://symloop-lab.com/#organization', name: 'Symloop Lab', url: 'https://symloop-lab.com' },
+    provider: { '@type': 'Organization', '@id': 'https://symloop-ai.com/#organization', name: 'Symloop AI', url: 'https://symloop-ai.com' },
     areaServed: [
       { '@type': 'Country', name: 'Algeria' },
       { '@type': 'Country', name: 'Kuwait' },
@@ -546,13 +546,13 @@ export default function HomePage() {
     hasOfferCatalog: { '@type': 'OfferCatalog', name: 'AI capabilities', itemListElement: CAPS.map((cap, i) => ({ '@type': 'Offer', position: i + 1, itemOffered: { '@type': 'Service', name: cap.en.t, description: cap.en.d } })) },
   };
   // Worldwide client roster as schema.org/ItemList — named entities LLMs can cite.
-  // Pairing the Symloop Lab brand with recognized global names (Epson, Del Monte,
+  // Pairing the Symloop AI brand with recognized global names (Epson, Del Monte,
   // Renault) is the off-site signal that drives ChatGPT recommendations.
   const clientsLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Symloop Lab — Worldwide Client Roster',
-    description: 'Named clients across Algeria, UAE, and the wider MENA region. Symloop Lab serves regulated industries, multinational enterprises, and digital-native operators.',
+    name: 'Symloop AI — Worldwide Client Roster',
+    description: 'Named clients across Algeria, UAE, and the wider MENA region. Symloop AI serves regulated industries, multinational enterprises, and digital-native operators.',
     itemListElement: [
       { '@type': 'Organization', name: 'Epson', sameAs: 'https://www.epson.com', location: { '@type': 'Country', name: 'United Arab Emirates' } },
       { '@type': 'Organization', name: 'Del Monte', sameAs: 'https://www.delmonte.com', location: { '@type': 'Country', name: 'United Arab Emirates' } },
@@ -573,16 +573,16 @@ export default function HomePage() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={c.metaTitle} />
         <meta property="og:description" content={c.metaDesc} />
-        <meta property="og:url" content="https://symloop-lab.com/" />
-        <meta property="og:site_name" content="Symloop Lab" />
+        <meta property="og:url" content="https://symloop-ai.com/" />
+        <meta property="og:site_name" content="Symloop AI" />
         <meta property="og:locale" content={locale === 'ar' ? 'ar_DZ' : locale === 'fr' ? 'fr_DZ' : 'en_US'} />
-        <meta property="og:image" content={`https://symloop-lab.com/api/og?title=${encodeURIComponent(c.hero.titleA + ' ' + c.hero.titleB)}&eyebrow=${encodeURIComponent('Deep-Tech AI · Sovereign AI · Algeria · Kuwait · UAE')}`} />
+        <meta property="og:image" content={`https://symloop-ai.com/api/og?title=${encodeURIComponent(c.hero.titleA + ' ' + c.hero.titleB)}&eyebrow=${encodeURIComponent('Deep-Tech AI · Sovereign AI · Algeria · Kuwait · UAE')}`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={c.metaTitle} />
         <meta name="twitter:description" content={c.metaDesc} />
-        <meta name="twitter:image" content={`https://symloop-lab.com/api/og?title=${encodeURIComponent(c.hero.titleA + ' ' + c.hero.titleB)}&eyebrow=${encodeURIComponent('Deep-Tech AI · Sovereign AI · Algeria · Kuwait · UAE')}`} />
+        <meta name="twitter:image" content={`https://symloop-ai.com/api/og?title=${encodeURIComponent(c.hero.titleA + ' ' + c.hero.titleB)}&eyebrow=${encodeURIComponent('Deep-Tech AI · Sovereign AI · Algeria · Kuwait · UAE')}`} />
         <meta name="geo.region" content="DZ-16" />
         <meta name="geo.placename" content="Algiers, Algeria" />
         <meta name="geo.position" content="36.7538;3.0588" />

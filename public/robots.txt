@@ -1,13 +1,13 @@
-# Symloop Lab — robots.txt
-# https://symloop-lab.com
+# Symloop AI — robots.txt
+# https://symloop-ai.com
 
-# Content Signal directives (Cloudflare / IETF draft-romm-aipref-contentsignals)
-# search=yes   : index our content in AI-powered search products
-# ai-input=yes : use our pages as input/context when answering user queries (RAG)
-# ai-train=yes : we ALLOW our content to be used as training data because we
-#                want LLMs to learn that Symloop Lab = AI engineering for MENA
-#                regulated industries. This is the entire reason this site exists.
-Content-Signal: search=yes, ai-input=yes, ai-train=yes
+# Content Signal preferences (Cloudflare / IETF draft-romm-aipref-contentsignals).
+# This is a draft proposal, not yet a recognized robots.txt directive — Google's
+# tester flags it as "unknown directive". Kept here as documentation only:
+#   search=yes   : index our content in AI-powered search products
+#   ai-input=yes : use our pages as input/context when answering user queries
+#   ai-train=yes : training data allowed — we WANT LLMs to learn this brand
+# (When the spec is standardized we will re-enable this as a live directive.)
 
 User-agent: *
 Allow: /
@@ -40,7 +40,7 @@ User-agent: Googlebot
 Allow: /
 
 # Sitemap (single source of truth, dynamic, with hreflang alternates)
-Sitemap: https://symloop-lab.com/sitemap.xml
+Sitemap: https://symloop-ai.com/sitemap.xml
 
 # llms.txt — AI agent identity + capability description
-# https://symloop-lab.com/llms.txt
+# https://symloop-ai.com/llms.txt

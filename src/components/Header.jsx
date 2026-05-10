@@ -47,29 +47,27 @@ export default function Header() {
             className="h-7 lg:h-8 w-auto object-contain brightness-0 invert"
           />
           <span className="block h-5 w-px bg-white/15" aria-hidden />
-          <span className="lab-mark font-mono text-[12px] tracking-[0.32em] uppercase text-white" aria-label="Lab">
-            <span className="lab-letter">L</span>
-            <span className="lab-letter">A</span>
-            <span className="lab-letter">B</span>
+          <span className="ai-mark font-mono text-[12px] tracking-[0.32em] uppercase text-white" aria-label="AI">
+            <span className="ai-letter">A</span>
+            <span className="ai-letter">I</span>
           </span>
         </Link>
 
         <style jsx>{`
-          @keyframes labPulse {
+          @keyframes aiPulse {
             0%, 60%, 100% { opacity: 0.45; text-shadow: 0 0 0 rgba(255,255,255,0); }
             30%           { opacity: 1;    text-shadow: 0 0 14px rgba(255,255,255,0.55); }
           }
-          .lab-mark { display: inline-flex; gap: 0.05em; }
-          .lab-letter {
+          .ai-mark { display: inline-flex; gap: 0.05em; }
+          .ai-letter {
             display: inline-block;
-            animation: labPulse 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            animation: aiPulse 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
             will-change: opacity, text-shadow;
           }
-          .lab-letter:nth-child(1) { animation-delay: 0s; }
-          .lab-letter:nth-child(2) { animation-delay: 0.18s; }
-          .lab-letter:nth-child(3) { animation-delay: 0.36s; }
+          .ai-letter:nth-child(1) { animation-delay: 0s; }
+          .ai-letter:nth-child(2) { animation-delay: 0.22s; }
           @media (prefers-reduced-motion: reduce) {
-            .lab-letter { animation: none; opacity: 1; }
+            .ai-letter { animation: none; opacity: 1; }
           }
         `}</style>
 

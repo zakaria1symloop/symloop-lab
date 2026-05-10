@@ -79,7 +79,7 @@ export default function Footer() {
             <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40">All systems · production</span>
           </div>
           <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/30">
-            © {year} Symloop Lab · Algiers · Engineered for MENA regulated industries
+            © {year} Symloop AI · Algiers · Engineered for MENA regulated industries
           </div>
         </div>
       </div>

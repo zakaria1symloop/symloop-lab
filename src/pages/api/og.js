@@ -8,7 +8,7 @@ export const config = { runtime: 'edge' };
 
 export default async function handler(req) {
   const { searchParams } = new URL(req.url);
-  const title   = (searchParams.get('title')   || 'Symloop Lab').slice(0, 110);
+  const title   = (searchParams.get('title')   || 'Symloop AI').slice(0, 110);
   const eyebrow = (searchParams.get('eyebrow') || 'AI engineering · MENA regulated industries').slice(0, 90);
 
   return new ImageResponse(
@@ -51,11 +51,11 @@ export default async function handler(req) {
 
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-            <div style={{ fontSize: 28, fontWeight: 400, letterSpacing: '-0.01em' }}>SYMLOOP LAB</div>
+            <div style={{ fontSize: 28, fontWeight: 400, letterSpacing: '-0.01em' }}>SYMLOOP AI</div>
             <div style={{ fontSize: 16, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)' }}>By Symloop Technology · Algiers</div>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, fontSize: 16, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)' }}>
-            <span>symloop-lab.com</span>
+            <span>symloop-ai.com</span>
             <span style={{ display: 'block', width: 8, height: 8, background: 'rgba(255,255,255,0.6)' }} />
           </div>
         </div>

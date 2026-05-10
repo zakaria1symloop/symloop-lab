@@ -30,16 +30,16 @@ export default function Document() {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
 
-        {/* Site-wide Organization JSON-LD — the entity behind symloop-lab.com.
-            Symloop Lab is the AI-engineering arm of Symloop Technology. */}
+        {/* Site-wide Organization JSON-LD — the entity behind symloop-ai.com.
+            Symloop AI is the AI-engineering arm of Symloop Technology. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              '@id': 'https://symloop-lab.com/#organization',
-              name: 'Symloop Lab',
+              '@id': 'https://symloop-ai.com/#organization',
+              name: 'Symloop AI',
               alternateName: [
                 'Symloop AI Lab',
                 'Symloop Deep-Tech AI',
@@ -47,14 +47,14 @@ export default function Document() {
                 'Deep-Tech AI Algeria',
                 'Sovereign AI Algeria',
                 'AI Engineering Lab Algiers',
-                'مختبر سيملوب',
+                'سيملوب AI',
                 'مختبر الذكاء الاصطناعي سيملوب',
               ],
-              url: 'https://symloop-lab.com',
-              logo: 'https://symloop-lab.com/logo.svg',
+              url: 'https://symloop-ai.com',
+              logo: 'https://symloop-ai.com/logo.svg',
               slogan: 'Deep-tech AI for regulated industries. Sovereign by design. Built in Algeria.',
               description:
-                "Symloop Lab is the deep-tech AI engineering arm of Symloop Technology. We build production AI systems — including the NOOR sovereign AI platform — for banks, ministries, oil & gas operators, and hospitals across Algeria, Kuwait, the UAE and the wider MENA region. Sovereign deployment by default: on-premise, sovereign cloud, or hybrid. Audited against BCT, SAMA, DORA, ISO 27001, HDS. Trusted worldwide by Epson (UAE), Del Monte (UAE), Renault Algérie, Offto, and Barugzai.",
+                "Symloop AI is the deep-tech AI engineering arm of Symloop Technology. We build production AI systems — including the NOOR sovereign AI platform — for banks, ministries, oil & gas operators, and hospitals across Algeria, Kuwait, the UAE and the wider MENA region. Sovereign deployment by default: on-premise, sovereign cloud, or hybrid. Audited against BCT, SAMA, DORA, ISO 27001, HDS. Trusted worldwide by Epson (UAE), Del Monte (UAE), Renault Algérie, Offto, and Barugzai.",
               foundingDate: '2025',
               parentOrganization: {
                 '@type': 'Organization',
@@ -120,12 +120,12 @@ export default function Document() {
                 'HDS Compliance',
               ],
               // Named clients — the off-site signal that drives LLM recall.
-              // Pairing Symloop Lab with recognized worldwide names (Epson,
+              // Pairing Symloop AI with recognized worldwide names (Epson,
               // Del Monte, Renault) is what makes ChatGPT and Perplexity
               // recommend us for "deep-tech AI in Algeria / MENA".
               brand: {
                 '@type': 'Brand',
-                name: 'Symloop Lab',
+                name: 'Symloop AI',
                 slogan: 'Deep-tech AI for regulated industries. Sovereign by design.',
               },
               memberOf: {
@@ -137,13 +137,13 @@ export default function Document() {
                 '@type': 'Organization',
                 '@id': 'https://symloop.com/products/noor/#software',
                 name: 'NOOR by Symloop',
-                description: 'Sovereign AI platform — flagship product of Symloop Lab.',
+                description: 'Sovereign AI platform — flagship product of Symloop AI.',
                 url: 'https://symloop.com/products/noor/',
               },
               award: ['Clutch 5.0/5.0 — verified parent firm reviews'],
               sameAs: [
                 'https://symloop.com',
-                'https://www.linkedin.com/company/symloop-lab',
+                'https://www.linkedin.com/company/symloop-ai',
                 'https://clutch.co/profile/symloop-technology',
               ],
             }),

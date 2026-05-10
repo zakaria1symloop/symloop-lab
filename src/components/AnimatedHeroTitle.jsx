@@ -3,7 +3,7 @@
 // AnimatedHeroTitle — word-by-word stagger reveal with a continuous cyan
 // shimmer that sweeps across the second line every few seconds.
 //
-// Built for the Symloop Lab hero. Each word slides up from below + fades in
+// Built for the Symloop AI hero. Each word slides up from below + fades in
 // with its own delay, like a curtain lifting one column at a time. The
 // second line ("for business.") has a slow cyan gradient shimmer so the
 // hero never looks static after the initial reveal.

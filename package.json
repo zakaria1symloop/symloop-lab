@@ -1,8 +1,8 @@
 {
-  "name": "symloop-lab",
+  "name": "symloop-ai",
   "version": "0.1.0",
   "private": true,
-  "description": "Symloop Lab — heavy AI engineering for MENA regulated industries. Sister site to symloop.com.",
+  "description": "Symloop AI — heavy AI engineering for MENA regulated industries. Sister site to symloop.com.",
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",

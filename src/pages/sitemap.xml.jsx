@@ -2,7 +2,7 @@
 // site, but structured to scale: when /capabilities/, /sectors/, /case-studies/
 // arrive, just add to staticPaths. ISR-cached at edge for 1 hour.
 
-const SITE_URL = 'https://symloop-lab.com';
+const SITE_URL = 'https://symloop-ai.com';
 const LOCALES = ['en', 'fr', 'ar'];
 const DEFAULT_LOCALE = 'en';
 
