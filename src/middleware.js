@@ -41,38 +41,18 @@ export async function middleware(req) {
     return res;
   }
 
-  // Fetch markdown source from same origin and return as fresh response
-  // with explicit Content-Type. The matcher excludes /llms.txt and
-  // /.well-known/ so this fetch doesn't re-trigger middleware.
-  try {
-    const targetUrl = new URL(target, req.nextUrl.origin);
-    const upstream = await fetch(targetUrl.toString(), {
-      headers: { 'User-Agent': 'symloop-ai-markdown-negotiation/1.0' },
-    });
-    if (!upstream.ok) {
-      const res = NextResponse.next();
-      res.headers.append('Vary', 'Accept');
-      return res;
-    }
-    const text = await upstream.text();
-    // Rough token estimate (~4 chars per token for English+code mix).
-    // Saves agents from re-tokenizing to budget context window usage.
-    const approxTokens = Math.ceil(text.length / 4);
-    return new NextResponse(text, {
-      status: 200,
-      headers: {
-        'Content-Type': 'text/markdown; charset=utf-8',
-        'Vary': 'Accept',
-        'Cache-Control': 'public, max-age=300, must-revalidate',
-        'X-Markdown-Source': target,
-        'X-Markdown-Tokens': String(approxTokens),
-      },
-    });
-  } catch {
-    const res = NextResponse.next();
-    res.headers.append('Vary', 'Accept');
-    return res;
-  }
+  // Internally rewrite to /api/markdown/ — that endpoint reads llms.txt
+  // and returns it with the correct Content-Type: text/markdown header.
+  // We use rewrite() (not a custom NextResponse) because Vercel's edge
+  // strips Content-Type from middleware-constructed bodies in some
+  // configurations. The api route's headers are preserved cleanly.
+  const url = req.nextUrl.clone();
+  url.pathname = '/api/markdown/';
+  url.search = '';
+  const res = NextResponse.rewrite(url);
+  res.headers.set('Vary', 'Accept');
+  res.headers.set('X-Middleware-Ran', 'markdown');
+  return res;
 }
 
 // Match all paths except API routes, Next.js internals, static assets,
