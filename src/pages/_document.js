@@ -11,6 +11,9 @@ export default function Document() {
         <meta name="theme-color" content="#000000" />
         <meta name="format-detection" content="telephone=no" />
 
+        {/* Google Search Console — backup verification path (DNS TXT is primary) */}
+        <meta name="google-site-verification" content="bca5n8OhtCgmc1kLG-Q8dxZaLq-H5Rrlxtk_A6hbSH4" />
+
         {/* Disable browser scroll restoration BEFORE hydration. The long
             sticky Manifesto section (140vh) confuses the browser's default
             scrollRestoration='auto', which can land at the bottom on reload.
