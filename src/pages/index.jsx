@@ -611,3 +611,22 @@ export default function HomePage() {
     </>
   );
 }
+
+// Force the homepage to be server-rendered (not statically prerendered).
+// Reason: Vercel's edge cache serves SSG pages directly from CDN, BEFORE
+// middleware or beforeFiles rewrites have a chance to apply. That breaks
+// content negotiation (Markdown for Agents pattern) — agents hitting / with
+// Accept: text/markdown get served the cached HTML. Switching to SSR makes
+// every request go through Node, where the middleware-level rewrite to
+// /api/markdown/ fires reliably. The CDN can still cache the SSR response,
+// but it now varies on Accept correctly.
+export async function getServerSideProps({ res }) {
+  // Aggressive CDN cache — same-day TTL, stale-while-revalidate for a year.
+  // Browsers see cached HTML at edge speed; agent Accept-mediated rewrites
+  // still fire because Vercel routes through Node first.
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=300, stale-while-revalidate=31536000'
+  );
+  return { props: {} };
+}
