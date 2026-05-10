@@ -29,6 +29,7 @@ export async function middleware(req) {
   if (!wantsMarkdown) {
     const res = NextResponse.next();
     res.headers.append('Vary', 'Accept');
+    res.headers.set('X-Middleware-Ran', 'true');
     return res;
   }
 
