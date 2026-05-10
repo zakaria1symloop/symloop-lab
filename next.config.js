@@ -32,17 +32,17 @@ const nextConfig = {
         {
           source: '/',
           has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
-          destination: '/api/markdown',
+          destination: '/api/markdown/',
         },
         {
           source: '/:locale(en|fr|ar)',
           has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
-          destination: '/api/markdown',
+          destination: '/api/markdown/',
         },
         {
           source: '/:locale(en|fr|ar)/',
           has: [{ type: 'header', key: 'accept', value: '.*text/markdown.*' }],
-          destination: '/api/markdown',
+          destination: '/api/markdown/',
         },
       ],
     };
